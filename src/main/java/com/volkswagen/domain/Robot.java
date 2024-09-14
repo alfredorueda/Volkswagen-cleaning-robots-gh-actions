@@ -59,14 +59,14 @@ public class Robot {
             case SOUTH -> this.position.orientation(WEST);
         }
 
-        return  this;
+        return this;
     }
 
     public Robot moveForward() {
         int x = position.x();
         int y = position.y();
 
-        switch (position.orientation()){
+        switch (position.orientation()) {
             case EAST -> x++;
             case WEST -> x--;
             case NORTH -> y++;
@@ -74,10 +74,10 @@ public class Robot {
         }
         if (workplace.isOutside(x, y)) throw new IllegalArgumentException("Robot is outside the workplace");
 
-        if (workplace.hasObstacleIn(x,y)) throw new IllegalArgumentException("Robot has found an obstacle");
+        if (workplace.hasObstacleIn(x, y)) throw new IllegalArgumentException("Robot has found an obstacle");
 
-       // position.x(x);
-       // position.y(y);
+        position.x(x);
+        position.y(y);
         return this;
     }
 
