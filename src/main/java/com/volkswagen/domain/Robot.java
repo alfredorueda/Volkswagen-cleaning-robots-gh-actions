@@ -78,7 +78,7 @@ public class Robot {
 
         // Error to fail tests
         //position.x(x);
-        position.y(y);
+        //position.y(y);
         return this;
     }
 
