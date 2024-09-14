@@ -13,9 +13,6 @@ This input path is specified in the main class. The file must be in the resource
 The application has been developed using Java 17 and Maven. The tests are developed using JUnit 5. These dependencies
 are included in the `pom.xml` file.
 
-I tried to use Kotlin instead of Java, but I don't have enough experience with Hexagonal Architecture, so I decided to
-use Java... I think that's challenging enough :)
-
 ## How to run the application
 
 The application can be run using the main class: `com.volkswagen.robot.Main` or using the
