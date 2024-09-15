@@ -78,6 +78,10 @@ public class Robot {
 
         position.x(x);
         position.y(y);
+
+        position.x(x);
+        position.y(y);
+
         return this;
     }
 
