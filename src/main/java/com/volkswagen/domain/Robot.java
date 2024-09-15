@@ -79,6 +79,8 @@ public class Robot {
         position.x(x);
         position.y(y);
 
+        // Just a comment to test :)
+
         return this;
     }
 
