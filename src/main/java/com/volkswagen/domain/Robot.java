@@ -119,6 +119,23 @@ public class Robot {
         return Objects.hash(id);
     }
 
+    public void complexMethod(int a) {
+        if (a > 0) {
+            if (a % 2 == 0) {
+                for (int i = 0; i < 10; i++) {
+                    if (i == 5) {
+                        System.out.println("Middle");
+                    } else if (i > 7) {
+                        System.out.println("End");
+                    } else {
+                        System.out.println("Start");
+                    }
+                }
+            }
+        }
+    }
+
+
 
 
 }
