@@ -59,14 +59,14 @@ public class Robot {
             case SOUTH -> this.position.orientation(WEST);
         }
 
-        return  this;
+        return this;
     }
 
     public Robot moveForward() {
         int x = position.x();
         int y = position.y();
 
-        switch (position.orientation()){
+        switch (position.orientation()) {
             case EAST -> x++;
             case WEST -> x--;
             case NORTH -> y++;
@@ -74,7 +74,7 @@ public class Robot {
         }
         if (workplace.isOutside(x, y)) throw new IllegalArgumentException("Robot is outside the workplace");
 
-        if (workplace.hasObstacleIn(x,y)) throw new IllegalArgumentException("Robot has found an obstacle");
+        if (workplace.hasObstacleIn(x, y)) throw new IllegalArgumentException("Robot has found an obstacle");
 
         position.x(x);
         position.y(y);
@@ -120,22 +120,20 @@ public class Robot {
     }
 
     public void complexMethod(int a) {
-        if (a > 0) {
-            if (a % 2 == 0) {
-                for (int i = 0; i < 10; i++) {
-                    if (i == 5) {
-                        System.out.println("Middle");
-                    } else if (i > 7) {
-                        System.out.println("End");
-                    } else {
-                        System.out.println("Start");
-                    }
+        if (a > 0 && a % 2 == 0) {
+
+            for (int i = 0; i < 10; i++) {
+                if (i == 5) {
+                    System.out.println("Middle");
+                } else if (i > 7) {
+                    System.out.println("End");
+                } else {
+                    System.out.println("Start");
                 }
             }
         }
+
     }
-
-
 
 
 }
