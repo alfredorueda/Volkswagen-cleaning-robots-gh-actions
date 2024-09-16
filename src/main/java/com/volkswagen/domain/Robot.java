@@ -124,11 +124,11 @@ public class Robot {
 
             for (int i = 0; i < 10; i++) {
                 if (i == 5) {
-                    System.out.println("Middle");
+                    a++;
                 } else if (i > 7) {
-                    System.out.println("End");
+                    a = a + 1;
                 } else {
-                    System.out.println("Start");
+                    a = a + 2;
                 }
             }
         }
