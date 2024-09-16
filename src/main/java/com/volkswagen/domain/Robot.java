@@ -119,6 +119,21 @@ public class Robot {
         return Objects.hash(id);
     }
 
+    public void complexMethod(int a) {
+        if (a > 0 && a % 2 == 0) {
+
+            for (int i = 0; i < 10; i++) {
+                if (i == 5) {
+                    a++;
+                } else if (i > 7) {
+                    a = a + 1;
+                } else {
+                    a = a + 2;
+                }
+            }
+        }
+
+    }
 
 
 }
