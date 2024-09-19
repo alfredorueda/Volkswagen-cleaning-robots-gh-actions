@@ -78,6 +78,8 @@ public class Robot {
 
         if (workplace.hasObstacleIn(x, y)) throw new IllegalArgumentException("Robot has found an obstacle");
 
+        // Now is correct :)
+
         position.x(x);
         position.y(y);
 
