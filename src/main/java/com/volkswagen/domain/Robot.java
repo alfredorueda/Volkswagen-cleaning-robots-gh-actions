@@ -20,6 +20,8 @@ public class Robot {
 
     private Robot(Workplace workplace, RobotPosition position) {
 
+        // This is just a comment to test GitHub Actions CI feature
+
         if (workplace == null) throw new IllegalArgumentException("Workplace cannot be null");
         if (position == null) throw new IllegalArgumentException("Position cannot be null");
 
