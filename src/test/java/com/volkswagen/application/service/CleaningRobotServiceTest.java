@@ -91,20 +91,20 @@ public class CleaningRobotServiceTest {
         robots.equals(robotsDataCommand.workplace().finishedRobots());
     }
 
-//    @Test
-//    void returns_a_list_of_robots_with_correct_positions() {
-//        List<Robot> robots = cleaningRobotService.controlRobots(robotsDataCommand);
-//        assertThat(robots.get(0).position()).isEqualTo(RobotPosition.from("1 3 N"));
-//        assertThat(robots.get(1).position()).isEqualTo(RobotPosition.from("5 1 E"));
-//    }
-//
-//    @Test
-//    void process_robots_with_obstacle() {
-//        IllegalArgumentException illegalArgumentException = assertThrows(
-//                IllegalArgumentException.class,
-//                () -> cleaningRobotService.controlRobots(robotsDataCommandCollision));
-//
-//        assertThat(illegalArgumentException.getMessage()).isEqualTo("Robot has found an obstacle");
-//    }
+    @Test
+    void returns_a_list_of_robots_with_correct_positions() {
+        List<Robot> robots = cleaningRobotService.controlRobots(robotsDataCommand);
+        assertThat(robots.get(0).position()).isEqualTo(RobotPosition.from("1 3 N"));
+        assertThat(robots.get(1).position()).isEqualTo(RobotPosition.from("5 1 E"));
+    }
+
+    @Test
+    void process_robots_with_obstacle() {
+        IllegalArgumentException illegalArgumentException = assertThrows(
+                IllegalArgumentException.class,
+                () -> cleaningRobotService.controlRobots(robotsDataCommandCollision));
+
+        assertThat(illegalArgumentException.getMessage()).isEqualTo("Robot has found an obstacle");
+    }
 
 }
