@@ -160,6 +160,7 @@ class RobotTest {
         assertThat(robot.position().y()).isEqualTo(DEFAULT_ROBOT_POSITION_Y);
         assertThat(robot.position().x()).isEqualTo(DEFAULT_ROBOT_POSITION_X + 1);
         assertThat(robot.position().orientation()).isEqualTo(RobotOrientation.EAST);
+
     }
 
     @Test

@@ -78,7 +78,7 @@ public class Robot {
 
         if (workplace.hasObstacleIn(x, y)) throw new IllegalArgumentException("Robot has found an obstacle");
 
-        // Now is correct :)
+        // Now is correct :) Inetum
 
         position.x(x);
         position.y(y);
