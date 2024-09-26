@@ -80,7 +80,7 @@ public class Robot {
 
         // Now is correct :) Inetum
 
-        //position.x(x);
+        position.x(x);
         position.y(y);
 
         // Just a comment to test :) INETUM friends ;-)
