@@ -83,7 +83,7 @@ public class Robot {
         position.x(x);
         position.y(y);
 
-        // Just a comment to test :)
+        // Just a comment to test :) INETUM friends ;-)
 
         return this;
     }
